@@ -7,15 +7,48 @@
 </head>
 <body>
     <h1 id="title">Survey Form</h1>
-        <p id="description"></p>
+        <p id="description">This survey is for testing only</p>
             <form id="survey-form" action="">
-                <select id="dropdown"></select>
-                <label for="name-label"></label>
-                <input id="name" type="text" placeholder="Insert name here:">
-                <label for="email-label"></label>
-                <input id="email" type="email" placeholder="Insert email here">
-                <label for="number-label"></label>
-                <input min="0" max="120" id="number" type="number" placeholder="Insert number here">
+            <fieldset>
+                <label id="name-label" for="name-label">
+                    <input required id="name" type="text" placeholder="Insert name here">
+                    NAME
+                </label>
+                <label id="email-label" for="email-label">
+                    <input required id="email" type="email" placeholder="Insert email here">
+                    EMAIL
+                </label>
+                <label id="number-label" for="number-label">
+                    <input min="0" max="120" id="number" type="number" placeholder="Insert age here  ">AGE
+                </label>
+            </fieldset>
+            <fieldset>
+                <select id="dropdown">
+                    <option value="">(Gender)</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for=""><input value="1" name="answer" type="radio">YES</label>
+                <label for=""><input value="2" name="answer" required type="radio">NO</label>
+                <label for=""><input value="3" name="answer" required type="radio">MAYBE</label>
+                <label for=""><input value="4" name="answer" required type="radio">IDK</label>
+            </fieldset>
+            <fieldset>
+                <input value="HELLO" name="greetings" type="radio">HELLO
+                <input value="HI" name="greetings" type="radio">HI
+                <input value="GOODBYE" name="GOODBYE" type="radio">GOODBYE
+                <input value="SEE YOU" name="GOODBYE" type="radio">SEE YOU
+            </fieldset>
+            <fieldset>
+                <p>ARE YOU OKAY?</p>
+                <input name="checked" value="yes" type="checkbox">YES
+                <input name="checked" value="no" type="checkbox">NO
+            </fieldset>
+            <textarea name="TY" id="">THANK YOU for TESTING</textarea>
+
+                <button id="submit" type="submit">SUBMIT</button>
             </form>
 </body>
 </html>

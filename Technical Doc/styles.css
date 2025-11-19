@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.title {
+    text-align: center;
+}
+h2{
+    
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+.org {
+    padding: 10px 0 0 10px;
+}
+.text{
+    align-items: end;
+    height: 1cm;
+    padding-top: 0%;
+    padding-bottom: 0;
+    width: 12cm;
+}
